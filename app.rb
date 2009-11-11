@@ -13,6 +13,14 @@ run "cp ../template/application_controller.rb app/controllers/application_contro
 run "mkdir db/migrate"
 run "cp ../template/20091026164433_create_users.rb db/migrate/20091026164433_create_users.rb"
 
+run "cp ../template/application.html.erb app/views/layouts/application.html.erb"
+
+run "rm -r public/javascripts"
+run "mkdir public/javascripts"
+
+run "cp ../template/rails.js public/javascripts"
+run "cp ../template/jquery.min.js public/javascripts"
+
 git :add => "."
 git :commit => "-m 'Initial commit'"
 
