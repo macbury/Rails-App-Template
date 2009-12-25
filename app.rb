@@ -14,9 +14,9 @@ run "cp config/database.yml config/example_database.yml"
 run "rm -r public/javascripts"
 run "mkdir public/javascripts"
 
-run "cp -R ../app_template/template/ ."
-
 git :add => ".", :commit => "-m 'Initial commit'"
+
+run "cp -R ../app_template/template/ ."
 
 gem "authlogic"
 gem "searchlogic"
@@ -40,17 +40,6 @@ generate :formtastic
 run "rake sitemap:install"
 
 git :add => ".", :commit => "-m 'Logowanie i rejestracja'"
-
-require 'net/http'
-
-Net::HTTP.start("github.com") do |http|
-  resp = http.get("/svenfuchs/rails-i18n/raw/master/rails/locale/pl.yml")
-  open("config/locales/pl.yml", "wb") do |file|
-    file.write(resp.body)
-  end
-end
-
-git :add => ".", :commit => "-m 'Spolszczenie...'"
 
 run "mate ."
 run "mate config/database.yml"
