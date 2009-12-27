@@ -22,10 +22,10 @@ gem "authlogic"
 gem "searchlogic"
 gem "declarative_authorization"
 gem 'meta-tags', :lib => 'meta_tags', :source => 'http://gemcutter.org'
-gem 'less', :source => "http://gemcutter.org"
+gem 'less', :lib => false, :source => "http://gemcutter.org"
 gem 'sitemap_generator', :lib => false, :source => 'http://gemcutter.org'
 
-plugin 'less-rails', :git => 'git://github.com/yeastymobs/less-rails.git'
+plugin 'more', :git => 'git://github.com/cloudhead/more.git'
 plugin 'xss_terminate', :git => 'git://github.com/look/xss_terminate.git'
 plugin 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git'
 plugin 'permalink_fu', :git => 'git://github.com/technoweenie/permalink_fu.git'

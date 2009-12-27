@@ -63,13 +63,6 @@ class ApplicationController < ActionController::Base
     redirect_to session[:return_to] || root_path
     session[:return_to] = nil
   end
-  
-	def need_enter_profile_information(user=nil)
-		if logged_in? && !self.current_user.valid?
-			flash[:error] = "Brak danych w profilu"
-			redirect_to logged_in? ? settings_path : root_path
-		end
-	end
 
   def login_required
     unless logged_in?
