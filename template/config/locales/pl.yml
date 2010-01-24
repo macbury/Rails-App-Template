@@ -2,6 +2,24 @@
 # by Jacek Becela (jacek.becela@gmail.com, http://github.com/ncr)
 
 pl:
+  formtastic:
+    labels:
+      user:
+        password: "Hasło"
+        password_confirmation: "Powtórz hasło"
+    hints:
+      user:
+        email: "np. jan.kowalski@poczta.pl"
+        
+  flash:
+    error:
+      access_denied: "Nie masz wystarczających uprawnień aby móc odwiedzić tą stronę"
+    notice:
+      email_verification: "Na twój e-mail został wysłany link którym opublikujesz ofertę."
+      logged_in: "Zostałeś zalogowany w serwisie!"
+      logged_out: "Zostałeś wylogowany z serwisu!"
+      registered: "Rejestracja się powiodła"
+      
   number:
     format:
       separator: ","
@@ -57,6 +75,7 @@ pl:
 
   datetime:
     distance_in_words:
+      ago: "temu"
       half_a_minute: "pół minuty"
       less_than_x_seconds:
         one:   "mniej niż sekundę"
@@ -98,10 +117,11 @@ pl:
   activerecord:
     models:
       user: "Użytkownik"
-    attributes:
-      user:
-        password: "Hasło"
-        password_confirmation: "Powtórz hasło"
+      comment:
+        attributes:
+          captcha_solution:
+            blank: 'musi być podane'
+            invalid: 'odpowiedź jest niepoprawna'
     errors:
       template:
         header:
@@ -137,3 +157,6 @@ pl:
       words_connector: ", "
       two_words_connector: " i "
       last_word_connector: " oraz "
+      for_word_connector: " dla "
+      in_word_connector: " w "
+      or_word_connector: " albo "

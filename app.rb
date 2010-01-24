@@ -30,6 +30,7 @@ plugin 'xss_terminate', :git => 'git://github.com/look/xss_terminate.git'
 plugin 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git'
 plugin 'permalink_fu', :git => 'git://github.com/technoweenie/permalink_fu.git'
 plugin 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git'
+plugin 'exception_notification', :git => "git://github.com/jeremyevans/exception_notification.git"
 
 git :add => ".", :commit => "-m 'Golonkam flaki i inne przysmaki'"
 

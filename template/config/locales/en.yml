@@ -1,0 +1,28 @@
+en:
+  formtastic:
+    labels:
+      user:
+        password: "Password"
+        password_confirmation: "Password confirmation"
+    hints:
+      user:
+        email: "example jan.kowalski@poczta.pl"
+        
+  flash:
+    error:
+      access_denied: "You dont have permission to access this page"
+    notice:
+      logged_in: "Logged in successfully."
+      logged_out: "Logged out successfully."
+      registered: "Rejestracja się powiodła"
+
+  datetime:
+    distance_in_words:
+      ago: "temu"
+        
+  support:
+    array:
+      last_word_connector: " and "
+      for_word_connector: " for "
+      in_word_connector: " in "
+      or_word_connector: " or "
