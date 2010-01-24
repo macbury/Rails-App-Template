@@ -18,7 +18,7 @@ en:
 
   datetime:
     distance_in_words:
-      ago: "temu"
+      ago: "ago"
         
   support:
     array:
